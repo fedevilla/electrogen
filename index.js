@@ -22,6 +22,9 @@ let result = menu();
 let voltaje = (tipo, horas) => {
     if(tipo === 1 || tipo === 2){
         horas = parseInt(prompt("Ingrese la cantidad de horas necesarias para calcular voltaje"));
+        while(isNaN(horas)){
+            horas = parseInt(prompt("Ingrese la cantidad de horas necesarias para calcular voltaje"));
+        }
         const VOLTAJE = 2;
         return horas * VOLTAJE;
     }else{
@@ -50,3 +53,7 @@ switch (result) {
 }
 
 alert("Gracias. Vuelvas prontos");
+
+
+
+
