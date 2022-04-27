@@ -106,7 +106,7 @@ switch (result) {
                                     arrElectrogeno.push(nuevoEquipo);
                                     output +=  `Nombre: ${nuevoEquipo.nombre} \n kva: ${nuevoEquipo.kva} \n Descripcion: ${nuevoEquipo.descripcion} \n Tipo: ${nuevoEquipo.tipo} \n ----------------------------- \n`
                                     ++inicio;
-                                    console.log(arrElectrogeno);
+                                   
                                 }
                                 
                                 alert(`Resumen de los equipos ingresados correctamente: \n -------------------------------- \n ${output}`);
@@ -120,3 +120,6 @@ switch (result) {
 
 
 alert("Gracias. Vuelva pronto");
+
+
+
