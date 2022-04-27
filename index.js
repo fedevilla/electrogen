@@ -119,7 +119,6 @@ switch (result) {
 }
 
 
-alert("Gracias. Vuelva pronto");
-
-
+alert("Programa finalizado.");
+alert("Se han guardado todos los registro. Para modificaciones, vuelva a inicilizar.");
 
