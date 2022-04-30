@@ -70,11 +70,9 @@ if(pass(result, LIMITS.limit_menu_down, LIMITS.limit_menu_up, ERRORES.error_menu
 //Calculo voltaje por hora de acuerdo a la opcion.
 switch (result) {
                 case 1:
-                    msg = "Usted ha seleccionado Alquiler. Seleccione voltaje";
                     alert("El volatje por hora requerido es de " + voltaje(result));
                 break;
                 case 2:
-                    msg = "Usted ha seleccionado Venta. Seleccione voltaje";
                     alert("El volatje por hora requerido es de " + voltaje(result));
                 break;
                 case 3:
