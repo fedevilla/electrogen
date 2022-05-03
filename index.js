@@ -7,7 +7,7 @@ let msg = "Ingrese la operacion que quiere realizar" + "\n" +
            "1 - Alquiler" + "\n" +
            "2 - Venta" + "\n" +
            "3 - Correctivo" + "\n" +
-           "4 - Ingreso de equipo (NUEVA OPCION)" + "\n" +
+           "4 - Ingreso de equipo" + "\n" +
            "    a. Ver listado de equipos activos" + "\n" +
            "    b. Agregar un equipo" + "\n" +
            "    c. Quitar un equipo" + "\n" +
