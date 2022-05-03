@@ -42,6 +42,8 @@ const ENTRADAS = {msg_voltaje: "Ingrese la cantidad de horas necesarias para cal
 //Objeto de limites
 const LIMITS = {limit_menu_down: 0, limit_menu_up: 5, limit_down_q_electrogenos: 1, limit_up_q_electrogenos: 5};
 
+
+
 //Arroja menu de opciones y captura valor por prompt
 let menu = () => parseInt(prompt(msg));
 let opcionKey = () => prompt(SUBMENU)
@@ -125,8 +127,13 @@ class Deposito{
     eliminarEquipo(Equipo){
 
         const index = this.nuevoEquipo.map(obj => obj.nombre).indexOf(Equipo);
-        this.nuevoEquipo.splice(index, 1);
-        alert(`El producto ${Equipo} ha sido eliminado del deposito`);
+        if(index != -1){
+            this.nuevoEquipo.splice(index, 1);
+            alert(`El equipo ${Equipo} ha sido eliminado del depósito`);
+        }else{
+            alert(`El equipo ${Equipo} no se encuentra registrado en depósito`)
+        }
+
     }
 
     obtenerDeposito(){
